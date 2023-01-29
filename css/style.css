@@ -1,0 +1,205 @@
+body {
+    display:flex;
+    flex:1;
+    flex-direction: column;
+    align-items: center;
+}
+
+#mainDiv {
+    width: 1000px;
+}
+
+#header {
+    display: flex;
+    top:0;
+    flex:1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f78501;
+}
+
+#header img {
+    background-color : white;
+    width: 300px;
+    height: 35px;
+}
+
+#imageDiv {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 330px;
+    height: 55px;
+    background-color: rgb(255, 255, 255);
+}
+
+#title {
+    color: white;
+    font-size: 35px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 5px;
+}
+
+#inputDiv{
+    display:flex;
+    height: 40px;
+    width: 900px;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: space-evenly;
+    margin: 10px;
+    margin-bottom: 30px;
+}
+
+#inputField{
+    flex:3;
+    background-color:rgb(255, 255, 255);
+    border-style: none;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    padding-left: 10px;
+    
+    
+}
+
+#ekleButton{
+    display: flex;
+    flex:1;
+    width: 200px;
+    background: #d9d9d9;
+    border-style: none;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-weight: '200';
+}
+
+#inputDiv span:hover{
+    background-color: #bbb;
+    cursor: pointer;
+}
+#inputDiv span:active{
+    background: #d9d9d9;
+}
+
+.preventSelect {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+                    /* TODOS */
+#todos {
+    display:flex;
+    flex:1;
+}
+
+.list {
+    display:flex;
+    padding: 0px;
+    flex-direction: column;
+    flex:1;
+    background: #fff;
+    border: 1px solid black;
+    list-style-type: none;
+}
+
+.list li:nth-child(odd) {
+    background: #f9f9f9;
+}
+
+
+.closeDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 40px;
+}
+
+.closeDiv :hover{
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    width: 35px;
+    height: 40px;
+    background-color: #f78501;
+}
+
+.closeDiv :active{
+    background-color: rgb(255, 180, 0);
+}
+
+.closeBtn{
+    font-weight:bold;
+    font-size: 18px;
+}
+
+.tick {
+    width: 30px;
+}
+
+.tick span{
+    display: none;
+}
+
+.todoLi {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    cursor: pointer;
+    padding-left: 5px;
+    /* padding: 12px 8px 12px 40px; */
+    background: #eee;
+    font-size: 18px;
+    transition: 0.2s;
+    list-style-type: none;
+    height: 40px;
+    color: black;
+    text-decoration: none;
+  
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.todoLiDone {
+    background-color: rgb(117, 107, 107) !important;
+    color: white !important;
+    
+}
+
+.todoTextDiv {
+    flex:1;
+    padding-left: 10px;
+}
+
+.todoText{
+    font-style: normal;
+    text-decoration: none;
+}
+.todoTextDone {
+    font-style: oblique;
+    text-decoration: line-through !important;
+}
+
+#error_emptyTodo .toast-body {
+    background-color: #ff0000aa;
+    box-shadow: 1px 1px ;
+    padding: 10px;
+}
+
+#error_emptyTodo button:active {
+    border: none;
+}
+
+/* kapatma butonunun etrafındaki border'ı kaldır */
+.close:focus:not(:focus-visible) { outline: none }
+
+/* input etrafındaki border'ı kaldır */
+#inputField:focus-visible { outline: none;}
